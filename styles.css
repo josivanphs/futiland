@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('banner.jpeg');
+    background-size: cover;
+}
+
+.banner{
+    text-align: center;
+    color: white
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+#players-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#players-list li {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#teams-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.team h3 {
+    color: #ffcc00;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    input[type="text"],
+    input[type="number"],
+    button {
+        width: calc(100% - 20px);
+    }
+
+    .team {
+        min-width: 100%;
+    }
+}
+
